@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $("button").click(function(){
+  $("#ted").fadeToggle();
+  $("#cat").fadeToggle("slow");
+  $("#monk").fadeToggle(3000);
+});
+});
+</script>
+</head>
+
+<body>
+ 
+<p>
+   <img id="ted" src="Ted.jpg" alt="A playground" width="300" height= "300"  border= "0" align="left" onmousedown = "mouseFunction(event);"/>
+   <img id="cat" src="cat.jpg" alt="A playground" width="300" height= "300"  border= "0" align="center" onmousedown = "mouseFunction2(event);"/>
+   <img id="monk" src="monkey.jpg" alt="A playground" width="300" height= "300" border= "0" align="right" onmousedown = "mouseFunction3(event);"/>
+   </p>
+<button>Fade the pictures</button>
+</body>
+ 
+</html>
