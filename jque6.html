@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style type ="text/css">
+.bg1 { background: url(images/red.jpg) repeat-x; background-color: #6c0000; }
+.bg2 { background: url(images/orange.jpg) repeat-x; background-color: #5A2A00; }
+.bg3 { background: url(images/blue.jpg) repeat-x; background-color: #00345B; }
+</style>
+<script>
+ 
+$(document).ready(function(){
+ 
+        $("li.one").click( function(){ $
+                              ("body").removeClass('bg2 , bg3').addClass("bg1");
+               });
+ 
+               $("li.two").click( function(){ $
+                              ("body").removeClass("bg1 , bg3").addClass("bg2");
+               });
+ 
+               $("li.three").click( function(){ $
+                              ("body").removeClass("bg1 , bg2").addClass("bg3");
+               });
+ 
+});
+</script>
+</head>
+ 
+<body>
+<ul>
+        <li class="one">reddish<a href="#"></a></li>
+        <li class="two">brownish<a href="#"></a></li>
+        <li class="three">bluish<a href="#"></a></li>
+</ul>
+</body>
+</html>

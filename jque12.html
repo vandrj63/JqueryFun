@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+toggle=0;
+$(document).ready(function(){
+ 
+  $("button").click(function(){
+  toggle=(toggle+1)%2;
+if(toggle){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+   $("#div3").fadeOut(3000);
+ 
+  }
+  else{ $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+   $("#div3").fadeIn(3000);}
+     });
+});
+</script>
+</head>
+ 
+<body>
+<h2>This is a heading</h2>
+<div id="div1">This is a paragraph.</div>
+<div id="div2">This is another paragraph.</div>
+<div id="div3">div 3 stuff.</div>
+<button>Click me to fade</button>
+</body>
+</html>
