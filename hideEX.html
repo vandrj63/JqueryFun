@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#ted2").click(function(){
+    $("#ted").hide();
+  });
+$("#cat2").click(function(){
+    $("#cat").hide();
+  });
+$("#monk2").click(function(){
+    $("#monk").hide();
+  });
+});
+</script>
+</head>
+<body>
+ 
+<p>
+   <img id="ted" src="Ted.jpg" alt="A playground" width="300" height= "300"  border= "0" align="left" onmousedown = "mouseFunction(event);"/>
+   <img id="cat" src="cat.jpg" alt="A playground" width="300" height= "300"  border= "0" align="center" onmousedown = "mouseFunction2(event);"/>
+   <img id="monk" src="monkey.jpg" alt="A playground" width="300" height= "300" border= "0" align="right" onmousedown = "mouseFunction3(event);"/>
+   </p>
+<button id="ted2">hide ted2</button>
+<button id="cat2">hide cat2</button>
+<button id="monk2">hide monkey</button>
+</body>
+ 
+</html>
